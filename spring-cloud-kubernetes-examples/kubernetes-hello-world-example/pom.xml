@@ -173,6 +173,10 @@
 									</build>
 								</image>
 							</images>
+							<authConfig>
+								<username>qq414831974</username>
+								<password>529968992a</password>
+							</authConfig>
 							<enricher>
 								<config>
 									<fmp-service>
