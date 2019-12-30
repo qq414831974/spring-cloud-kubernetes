@@ -155,15 +155,18 @@
 								<goals>
 									<goal>resource</goal>
 									<goal>build</goal>
+									<goal>push</goal>
 								</goals>
 							</execution>
 						</executions>
 						<configuration>
+							<images>
+								<image>
+									<name>qq414831974/springcloudtest:latest</name>
+								</image>
+							</images>
 							<enricher>
 								<config>
-									<fmp-namespace>
-										<name>springcloudk8s</name>
-									</fmp-namespace>
 									<fmp-service>
 										<type>NodePort</type>
 									</fmp-service>
