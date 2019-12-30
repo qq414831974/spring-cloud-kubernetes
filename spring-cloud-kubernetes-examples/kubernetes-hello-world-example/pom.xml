@@ -162,7 +162,7 @@
 							<enricher>
 								<config>
 									<fmp-namespace>
-										springcloud-k8s
+										<name>springcloudk8s</name>
 									</fmp-namespace>
 									<fmp-service>
 										<type>NodePort</type>
