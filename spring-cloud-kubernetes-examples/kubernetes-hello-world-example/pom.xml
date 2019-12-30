@@ -155,17 +155,24 @@
 								<goals>
 									<goal>resource</goal>
 									<goal>build</goal>
-									<goal>push</goal>
+<!--									<goal>push</goal>-->
 								</goals>
 							</execution>
 						</executions>
 						<configuration>
-							<images>
-								<image>
-									<name>qq414831974/springcloudtest:latest</name>
-									<build></build>
-								</image>
-							</images>
+<!--							<images>-->
+<!--								<image>-->
+<!--									&lt;!&ndash; Add your dockerhub user name here &ndash;&gt;-->
+<!--									<name>qq414831974/springcloudtest:latest</name>-->
+<!--									<alias>hello-world</alias>-->
+<!--									<build>-->
+<!--										<from>quay.io/rohankanojia/java-centos-openjdk11-jdk</from>-->
+<!--										<assembly>-->
+<!--											<descriptorRef>artifact</descriptorRef>-->
+<!--										</assembly>-->
+<!--									</build>-->
+<!--								</image>-->
+<!--							</images>-->
 							<enricher>
 								<config>
 									<fmp-service>
