@@ -163,6 +163,7 @@
 							<images>
 								<image>
 									<name>qq414831974/springcloudtest:latest</name>
+									<build></build>
 								</image>
 							</images>
 							<enricher>
