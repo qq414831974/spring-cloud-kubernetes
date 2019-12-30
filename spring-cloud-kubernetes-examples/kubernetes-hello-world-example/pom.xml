@@ -159,11 +159,11 @@
 							</execution>
 						</executions>
 						<configuration>
-							<access>
-								<apiVersion>v1</apiVersion>
-							</access>
 							<enricher>
 								<config>
+									<fmp-namespace>
+										<name>springcloud-k8s</name>
+									</fmp-namespace>
 									<fmp-service>
 										<type>NodePort</type>
 									</fmp-service>
