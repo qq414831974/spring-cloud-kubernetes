@@ -155,7 +155,7 @@
 								<goals>
 									<goal>resource</goal>
 									<goal>build</goal>
-<!--									<goal>push</goal>-->
+									<goal>push</goal>
 								</goals>
 							</execution>
 						</executions>
@@ -163,7 +163,7 @@
 <!--							<images>-->
 <!--								<image>-->
 <!--									<name>qq414831974/springcloudtest:latest</name>-->
-<!--									<build></build>-->
+<!--									<build/>-->
 <!--								</image>-->
 <!--							</images>-->
 							<enricher>
