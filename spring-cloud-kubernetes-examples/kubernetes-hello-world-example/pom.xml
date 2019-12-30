@@ -155,17 +155,17 @@
 								<goals>
 									<goal>resource</goal>
 									<goal>build</goal>
-									<goal>push</goal>
+<!--									<goal>push</goal>-->
 								</goals>
 							</execution>
 						</executions>
 						<configuration>
-							<images>
-								<image>
-									<name>qq414831974/springcloudtest:latest</name>
-									<build></build>
-								</image>
-							</images>
+<!--							<images>-->
+<!--								<image>-->
+<!--									<name>qq414831974/springcloudtest:latest</name>-->
+<!--									<build></build>-->
+<!--								</image>-->
+<!--							</images>-->
 							<enricher>
 								<config>
 									<fmp-service>
