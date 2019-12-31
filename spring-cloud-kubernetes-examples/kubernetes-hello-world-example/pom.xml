@@ -4,12 +4,12 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<artifactId>spring-cloud-kubernetes-examples</artifactId>
-		<groupId>org.springframework.qq414831974</groupId>
+		<groupId>com.qiezitv</groupId>
 		<version>1.1.1.RELEASE</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.springframework.qq414831974</groupId>
+	<groupId>com.qiezitv</groupId>
 	<artifactId>kubernetes-hello-world</artifactId>
 	<name>Spring Cloud Kubernetes :: Examples :: Hello World</name>
 	<description>A simple example that demonstrates how to build and test a basic spring
