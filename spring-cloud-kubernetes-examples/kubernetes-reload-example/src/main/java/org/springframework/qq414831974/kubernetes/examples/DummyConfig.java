@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.kubernetes.examples;
+package org.springframework.qq414831974.kubernetes.examples;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration(proxyBeanMethods = false)
-@ConfigurationProperties(prefix = "bean")
-public class MyConfig {
+@ConfigurationProperties(prefix = "dummy")
+public class DummyConfig {
 
-	private String message = "a message that can be changed live";
+	private String message = "this is a dummy message";
 
 	public String getMessage() {
 		return this.message;

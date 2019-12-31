@@ -14,23 +14,18 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.kubernetes.examples;
+package org.springframework.qq414831974.kubernetes.examples;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
-@Configuration(proxyBeanMethods = false)
-@ConfigurationProperties(prefix = "dummy")
-public class DummyConfig {
+@SpringBootApplication
+@EnableScheduling
+public class App {
 
-	private String message = "this is a dummy message";
-
-	public String getMessage() {
-		return this.message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
+	public static void main(String[] args) {
+		SpringApplication.run(App.class, args);
 	}
 
 }

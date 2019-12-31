@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.kubernetes.examples;
+package org.springframework.qq414831974.kubernetes.examples;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

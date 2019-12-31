@@ -14,18 +14,25 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.kubernetes.examples;
+package org.springframework.qq414831974.kubernetes.examples;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
-@SpringBootApplication
-@EnableScheduling
-public class App {
+@Component
+public class MyBean {
 
-	public static void main(String[] args) {
-		SpringApplication.run(App.class, args);
+	@Autowired
+	private MyConfig myConfig;
+
+	@Autowired
+	private DummyConfig dummyConfig;
+
+	@Scheduled(fixedDelay = 5000)
+	public void hello() {
+		System.out.println("The first message is: " + this.myConfig.getMessage());
+		System.out.println("The other message is: " + this.dummyConfig.getMessage());
 	}
 
 }

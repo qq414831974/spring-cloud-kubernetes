@@ -14,25 +14,23 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.kubernetes.examples;
+package org.springframework.qq414831974.kubernetes.examples;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
-@Component
-public class MyBean {
+@Configuration(proxyBeanMethods = false)
+@ConfigurationProperties(prefix = "bean")
+public class MyConfig {
 
-	@Autowired
-	private MyConfig myConfig;
+	private String message = "a message that can be changed live";
 
-	@Autowired
-	private DummyConfig dummyConfig;
+	public String getMessage() {
+		return this.message;
+	}
 
-	@Scheduled(fixedDelay = 5000)
-	public void hello() {
-		System.out.println("The first message is: " + this.myConfig.getMessage());
-		System.out.println("The other message is: " + this.dummyConfig.getMessage());
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 }
