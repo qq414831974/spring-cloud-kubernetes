@@ -155,28 +155,11 @@
 								<goals>
 									<goal>resource</goal>
 									<goal>build</goal>
-									<goal>push</goal>
+<!--									<goal>push</goal>-->
 								</goals>
 							</execution>
 						</executions>
 						<configuration>
-							<images>
-								<image>
-									<!-- Add your dockerhub user name here -->
-									<name>qq414831974/springcloudtest:latest</name>
-									<alias>hello-world</alias>
-									<build>
-										<from>fabric8/java-centos-openjdk8-jdk</from>
-										<assembly>
-											<descriptorRef>artifact</descriptorRef>
-										</assembly>
-									</build>
-								</image>
-							</images>
-							<authConfig>
-								<username>qq414831974</username>
-								<password>529968992a</password>
-							</authConfig>
 							<enricher>
 								<config>
 									<fmp-service>
