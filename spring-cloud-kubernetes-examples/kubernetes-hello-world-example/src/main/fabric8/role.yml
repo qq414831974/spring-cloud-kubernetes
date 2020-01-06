@@ -4,6 +4,12 @@ metadata:
   namespace: springcloudk8stest
   name: pod-reader
 rules:
-  - apiGroups: [""]
-    resources: ["pods","configmaps"]
-    verbs: ["get", "watch", "list"]
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+      - configmaps
+    verbs:
+      - get
+      - watch
+      - list
