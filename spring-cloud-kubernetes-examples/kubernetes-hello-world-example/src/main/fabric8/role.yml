@@ -1,8 +1,0 @@
-kind: Role
-metadata:
-  namespace: fabric8-k8s-test
-  name: pod-reader
-rules:
-  - apiGroups: [""]
-    resources: ["pods","configmaps"]
-    verbs: ["get", "watch", "list"]
