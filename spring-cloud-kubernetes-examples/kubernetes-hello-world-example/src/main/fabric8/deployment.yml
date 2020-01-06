@@ -1,5 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fabric8-hello-world
+  namespace: fabric8-k8s-test
 spec:
   replicas: 2
   template:
     spec:
-      serviceAccount: configreader
+      serviceAccount: config-reader

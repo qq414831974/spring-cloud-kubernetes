@@ -1,8 +1,0 @@
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: Role
-  name: podreader
-subjects:
-  - kind: ServiceAccount
-    name: config-reader
-    namespace: springcloudk8stest
