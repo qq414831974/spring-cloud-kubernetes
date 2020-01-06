@@ -1,0 +1,4 @@
+spec:
+  replicas: 2
+  template:
+      serviceAccount: config-reader
